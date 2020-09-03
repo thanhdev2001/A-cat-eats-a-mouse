@@ -8,6 +8,7 @@ function Cat(name){
 
 Cat.prototype.eat = function (Mouse){
     this.stomach.push(Mouse)
+    Mouse.dead = true
 }
 
 Cat.prototype.SaySomething = function(){
