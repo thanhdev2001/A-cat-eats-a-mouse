@@ -1,6 +1,6 @@
 var Cat = require('./cat.js')
 var Mouse = require('./mouse.js')
-var Dog = require('./dog')
+var Dog = require('./dog.js')
 
 Mouse = new Mouse('Jerry')
 Cat = new Cat('Thomas')
