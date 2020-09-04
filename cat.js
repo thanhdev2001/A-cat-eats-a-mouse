@@ -6,9 +6,15 @@ function Cat(name){
 }
 
 
-Cat.prototype.eat = function (Mouse){
-    this.stomach.push(Mouse)
-    Mouse.dead = true
+Cat.prototype.eat = function (animal){
+    if(animal instanceof Mouse){
+        this.stomach.push(Mouse)
+        Mouse.dead = true
+    }
+    else{
+        throw new Error('Cat cannot eat this animal')
+    }
+    
 }
 
 Cat.prototype.SaySomething = function(){
